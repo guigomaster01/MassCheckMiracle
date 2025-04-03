@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personagens Banidos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Personagens Banidos</h1>
+    <form method="POST">
+        <label for="log">Cole o log aqui:</label><br>
+        <textarea id="log" name="log" rows="10" cols="50"></textarea><br><br>
+        <input type="submit" value="Extrair">
+    </form>
+    {% if personagens_banidos %}
+        <h2>Personagens Banidos:</h2>
+        <ul>
+            {% for personagem in personagens_banidos %}
+                <li>{{ personagem }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <a href="/">Voltar</a>
+</body>
+</html>

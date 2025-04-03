@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f8; /* Um tom de fundo levemente azulado */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #6a0dad; /* Roxo mais escuro para títulos */
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #483d8b; /* Tom de azul arroxeado para botões */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6a5acd; /* Tom de azul arroxeado mais claro ao passar o mouse */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #483d8b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #483d8b;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para a tabela de resultados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #483d8b;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

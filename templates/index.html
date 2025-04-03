@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Personagens</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+    <h1>Buscar Personagens</h1>
+    <form method="POST">
+        <label for="nomes">Nomes dos personagens (separados por vírgula):</label><br>
+        <input type="text" id="nomes" name="nomes"><br><br>
+        <input type="submit" value="Buscar">
+        <a href="/banidos">Verificar os banidos pelo log</a>
+    </form>
+
+    <div> 
+
+    </div>
+</body>
+</html>

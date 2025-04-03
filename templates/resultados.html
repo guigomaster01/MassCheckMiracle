@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados da Busca</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Resultados da Busca</h1>
+    {% for nome, informacoes in resultados.items() %}
+        <h2>{{ nome }}</h2>
+        {% if informacoes %}
+            <!-- <p>Nome: {{ informacoes.get('Name', 'Não encontrado') }}</p> -->
+            <p>Vocação: {{ informacoes.get('Vocation', 'Não encontrado') }}</p>
+            <p>Level: {{ informacoes.get('Level', 'Não encontrado') }}</p>
+        {% else %}
+            <p>Personagem não encontrado.</p>
+        {% endif %}
+    {% endfor %}
+    <a href="/">Voltar</a>
+</body>
+</html>
