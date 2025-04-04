@@ -68,6 +68,3 @@ def banidos():
         personagens_banidos = extrair_personagens_banidos(log)
         return render_template("banidos.html", personagens_banidos=personagens_banidos)
     return render_template("banidos.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
